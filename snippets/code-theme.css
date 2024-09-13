@@ -1,0 +1,60 @@
+/* catpuccin */
+
+:root {
+    --catpuccin-mauve: #cba6f7;
+    --catpuccin-flamingo: #f2cdcd;
+    --catpuccin-rosewater: #f2d5cf;
+    --catpuccin-peach: #fab387;
+    --catpuccin-maroon: #eba0ac;
+    --catpuccin-blue: #89b4fa;
+    --catpuccin-sky: #89dceb;
+    --catpuccin-green: #a6e3a1;
+}
+
+/* cm - plugin for highlighting code in mixed mode */
+
+.cm-hmd-codeblock.cm-keyword {
+    color: var(--catpuccin-mauve);
+}
+.cm-hmd-codeblock.cm-variable {
+    color: var(--catpuccin-maroon);
+    /* color: var(--catpuccin-blue); */
+}
+.cm-hmd-codeblock.cm-type {
+    color: var(--catpuccin-rosewater);
+    /* color: var(--catpuccin-blue); */
+}
+.cm-hmd-codeblock.cm-property,.cm-hmd-codeblock.cm-builtin {
+    color: var(--catpuccin-blue);
+}
+.cm-hmd-codeblock.cm-number, .cm-hmd-codeblock.cm-atom {
+    color: var(--catpuccin-peach);
+}
+.cm-hmd-codeblock.cm-operator {
+    color: var(--catpuccin-sky);
+}
+.cm-hmd-codeblock.cm-string {
+    color: var(--catpuccin-green);
+}
+
+/* styles for highlighting code in reading mode */
+
+code.is-loaded[class^="language-"] span.token.keyword, span.token.builtin {
+    color: var(--catpuccin-mauve);
+}
+code.is-loaded[class^="language-"] span.token.number {
+    color: var(--catpuccin-peach);
+}
+code.is-loaded[class^="language-"] span.token.operator {
+    color: var(--catpuccin-sky);
+}
+code.is-loaded[class^="language-"] span.token.function {
+    color: var(--catpuccin-blue);
+}
+code.is-loaded[class^="language-"] span.token.string {
+    color: var(--catpuccin-green);
+}
+
+code.is-loaded.language-yaml span.token.key.atrule {
+    color: var(--catpuccin-blue);
+}
